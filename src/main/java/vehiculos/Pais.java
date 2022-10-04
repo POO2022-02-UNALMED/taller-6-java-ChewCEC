@@ -1,5 +1,6 @@
 package vehiculos;
 import java.util.Hashtable;
+
 public class Pais {
     String nombre;
     static Hashtable <Pais, Integer> lista_paises = new Hashtable <Pais, Integer>();
