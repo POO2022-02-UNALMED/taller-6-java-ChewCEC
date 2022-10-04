@@ -23,10 +23,18 @@ public class Vehiculo {
 		CantidadVehiculos ++;
         
         //sum one to the country of the fabricant
-        fabricante.getPais().lista_paises.put(fabricante.getPais(), fabricante.getPais().lista_paises.get(fabricante.getPais()) + 1);
+        if (fabricante.pais.lista_paises.containsKey(fabricante.pais)) {
+            fabricante.pais.lista_paises.put(fabricante.pais, fabricante.pais.lista_paises.get(fabricante.pais) + 1);
+        } else {
+            fabricante.pais.lista_paises.put(fabricante.pais, 1);
+        }
 
         // //sum one to the fabricant
-        Fabricante.lista_fabricantes.put(fabricante, Fabricante.lista_fabricantes.get(fabricante) + 1);
+        if (fabricante.lista_fabricantes.containsKey(fabricante)) {
+            fabricante.lista_fabricantes.put(fabricante, fabricante.lista_fabricantes.get(fabricante) + 1);
+        } else {
+            fabricante.lista_fabricantes.put(fabricante, 1);
+        }
 	}
 
     
