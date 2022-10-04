@@ -1,4 +1,5 @@
 package vehiculos;
+
 public class Vehiculo {
     String placa;
 	int puertas;
