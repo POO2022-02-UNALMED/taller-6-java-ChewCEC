@@ -22,10 +22,10 @@ public class Vehiculo {
 		CantidadVehiculos ++;
         
         //sum one to the country of the fabricant
-        fabricante.getPais().lista_paises.put(fabricante.getPais(), fabricante.getPais().lista_paises.get(fabricante.getPais()) + 1);
+        // fabricante.getPais().lista_paises.put(fabricante.getPais(), fabricante.getPais().lista_paises.get(fabricante.getPais()) + 1);
 
-        //sum one to the fabricant
-        fabricante.lista_fabricantes.put(fabricante, fabricante.lista_fabricantes.get(fabricante) + 1);
+        // //sum one to the fabricant
+        // fabricante.lista_fabricantes.put(fabricante, fabricante.lista_fabricantes.get(fabricante) + 1);
 	}
 
     
