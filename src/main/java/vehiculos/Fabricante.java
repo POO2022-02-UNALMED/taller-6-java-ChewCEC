@@ -2,7 +2,7 @@ package vehiculos;
 import java.util.Hashtable;
 
 public class Fabricante {
-    static Hashtable <String, Integer> lista_fabricantes = new Hashtable <String, Integer>();
+    static Hashtable <Fabricante, Integer> lista_fabricantes = new Hashtable <Fabricante, Integer>();
     String nombre;
     Pais pais;
 
@@ -27,10 +27,10 @@ public class Fabricante {
         return pais;
     }
 
-    public static String fabricaMayorVenstas() {
+    public static Fabricante fabricaMayorVentas() {
         int max = 0;
-        String fabricante = "";
-        for (String key : lista_fabricantes.keySet()) {
+        Fabricante fabricante = null;
+        for (Fabricante key : lista_fabricantes.keySet()) {
             if (lista_fabricantes.get(key) > max) {
                 max = lista_fabricantes.get(key);
                 fabricante = key;

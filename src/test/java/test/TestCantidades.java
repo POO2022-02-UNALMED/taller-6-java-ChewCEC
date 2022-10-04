@@ -37,7 +37,7 @@ public class TestCantidades {
 	
 	@Test
    	public void testCantidadTipos(){
-		String  comp = "Automoviles: 5\n" + 
+		String comp = "Automoviles: 5\n" + 
 				"Camionetas: 5\n" + 
 				"Camiones: 6";
 		boolean ok = true;

@@ -2,15 +2,15 @@ package vehiculos;
 import java.util.Hashtable;
 public class Pais {
     String nombre;
-    static Hashtable <String, Integer> lista_paises = new Hashtable <String, Integer>();
+    static Hashtable <Pais, Integer> lista_paises = new Hashtable <Pais, Integer>();
 
     public Pais (String nombre) {
         this.nombre = nombre;
-        if (lista_paises.containsKey(nombre)) {
-            lista_paises.put(nombre, lista_paises.get(nombre) + 1);
+        if (lista_paises.containsKey(this)) {
+            lista_paises.put(this, lista_paises.get(this) + 1);
         } else {
-            lista_paises.put(nombre, 1);
-        }
+            lista_paises.put(this, 1);
+        } 
     }
 
 
@@ -22,10 +22,10 @@ public class Pais {
         return nombre;
     }
 
-    public static String paisMasVendedor() {
+    public static Pais paisMasVendedor() {
         int max = 0;
-        String pais = "";
-        for (String key : lista_paises.keySet()) {
+        Pais pais = null;
+        for (Pais key : lista_paises.keySet()) {
             if (lista_paises.get(key) > max) {
                 max = lista_paises.get(key);
                 pais = key;
@@ -33,6 +33,5 @@ public class Pais {
         }
         return pais;
     }
-
 }
 
