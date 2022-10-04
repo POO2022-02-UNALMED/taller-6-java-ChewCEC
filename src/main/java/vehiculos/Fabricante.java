@@ -1,3 +1,4 @@
+package vehiculos;
 import java.util.Hashtable;
 
 public class Fabricante {
