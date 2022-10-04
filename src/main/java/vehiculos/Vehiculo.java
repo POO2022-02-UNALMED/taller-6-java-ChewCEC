@@ -20,20 +20,7 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		CantidadVehiculos ++;
-		
-	// 	if (Pais.mapaPais.containsKey(fabricante.getPais())) {
-	// 		Pais.mapaPais.put(fabricante.getPais(), Pais.mapaPais.get(fabricante.getPais()) + 1);
-	// 	}
-	// 	else {
-	// 		Pais.mapaPais.put(fabricante.getPais(), 1);
-	// 	}
-		
-	// 	if (Fabricante.mapaFabri.containsKey(fabricante)) {
-	// 		Fabricante.mapaFabri.put(fabricante, Fabricante.mapaFabri.get(fabricante) + 1);	
-	// 	}
-	// 	else {
-	// 		Fabricante.mapaFabri.put(fabricante, 1);
-	// 	}
+	
 	}
 
 
@@ -119,6 +106,7 @@ public class Vehiculo {
         return CantidadVehiculos;
     }
 
+    
 
 
 }

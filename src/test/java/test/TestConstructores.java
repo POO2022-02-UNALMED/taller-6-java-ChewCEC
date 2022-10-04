@@ -59,8 +59,7 @@ public class TestConstructores {
 		Vehiculo ve = new Camion("SS", "Camion premium", 1000, 100, f, 3);
 		
 		boolean ok = false;
-		if(ve.getPuertas() == 2 && ve.getTraccion().equals("4X2")
-				&& ve.getVelocidadMaxima() ==  80) {
+		if(ve.getPuertas() == 2 && ve.getTraccion().equals("4X2") && ve.getVelocidadMaxima() ==  80) {
 			ok = true;
 		}
 		assertTrue(ok, "Hay un error en los constructores de la clase Camion");

@@ -8,7 +8,7 @@ public class Camion extends Vehiculo {
     //Camion c1 =  new Camion("SS", "Camion premium", 1000, 100, f, 3);
 
     public Camion(String placa,  String nombre, int precio, int peso, Fabricante fabricante, int ejes) {
-        super(placa, 2, 100, nombre, precio, peso, "4X2", fabricante);
+        super(placa, 2, 80, nombre, precio, peso, "4X2", fabricante);
         this.ejes = ejes;
         camiones.add(this);
         totalCamiones++;
@@ -25,7 +25,6 @@ public class Camion extends Vehiculo {
     public static int getTotalCamiones() {
         return totalCamiones;
     }
-
 
 
 
